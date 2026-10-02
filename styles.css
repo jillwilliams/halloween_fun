@@ -1,0 +1,197 @@
+body {
+    margin: 0;
+    font-family: "Birthstone";
+    max-width: fit-content;
+    position: relative;
+}
+
+
+section#video-background {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+section#video-background video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+
+@media (min-aspect-ratio: 16/9) {
+    section#video-background video {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    section#video-background video {
+        width: auto;
+        height: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+    html {
+        font-size: 70%;
+    }
+}
+
+#bat {
+    width: 260px;
+    height: 200px;
+    z-index: 2;
+    animation: bat1Move 5s infinite;
+}
+
+#bat2 {
+    width: 360px;
+    height: 220px;
+    z-index: 2;
+    animation: bat2Move 10s infinite;
+}
+
+#ghost {
+    width: 360px;
+    height: 220px;
+    z-index: 2;
+    animation: ghostMove 10s infinite;
+}
+
+#reaper {
+    width: 100px;
+    height: 160px;
+    z-index: 2;
+    position: absolute;
+    right: 150px;
+    bottom: 160px;
+    animation: reaperMove 20s infinite;
+}
+
+#click_me {
+    width: 140px;
+    height: auto;
+    z-index: 2;
+    margin-top: -700px;
+}
+
+#background {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#controls {
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    width: 100px;
+    height: 20px;
+}
+
+#spiderweb {
+    width: 450px;
+    height: 450px;
+    z-index: 2;
+    position: absolute;
+    right: -10px;
+    top: -10px;
+
+}
+
+@keyframes ghostMove {
+    0% {
+        transform: translateX(0); 
+    }
+    20% {
+        transform: translateX(-100px);
+    }
+    50% {
+        transform: translateY(-100px);
+    }
+    75% {
+        transform: translateX(-300px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes bat1Move {
+    0% {
+        transform: translateX(0); 
+    }
+    20% {
+        transform: translateY(-300px);
+    }
+    50% {
+        transform: translateX(-200px);
+    }
+    75% {
+        transform: translateY(-300px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+@keyframes bat2Move {
+    0% {
+        transform: translateX(0); 
+    }
+    20% {
+        transform: translateY(-300px);
+    }
+    50% {
+        transform: translateX(-200px);
+    }
+    75% {
+        transform: translateY(-300px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+} 
+
+@keyframes reaperMove {
+    0% {
+        transform: translateX(0); 
+    }
+    25% {
+        transform: translateX(-20px);
+    }
+    50% {
+        transform: translateY(500px);
+    }
+    75% {
+        transform: translateY(500px);
+    }
+    100% {
+        transform: translateY(500px);
+    } 
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
