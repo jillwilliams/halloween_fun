@@ -66,9 +66,9 @@ section#video-background video {
 }
 
 #reaper {
-    width: 100px;
-    height: 160px;
-    z-index: 2;
+    width: 140px;
+    height: 170px;
+    z-index: 1;
     position: absolute;
     right: 150px;
     bottom: 160px;
