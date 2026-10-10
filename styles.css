@@ -1,10 +1,8 @@
 body {
     margin: 0;
     font-family: "Birthstone";
-    max-width: fit-content;
     position: relative;
 }
-
 
 section#video-background {
     width: 100%;
@@ -48,6 +46,9 @@ section#video-background video {
     width: 260px;
     height: 200px;
     z-index: 2;
+    position: absolute;
+    left: 400px;
+    top: 200px;
     animation: bat1Move 5s infinite;
 }
 
@@ -55,6 +56,9 @@ section#video-background video {
     width: 360px;
     height: 220px;
     z-index: 2;
+    position: absolute;
+    top: 200px;
+    right: 50px;
     animation: bat2Move 10s infinite;
 }
 
@@ -62,6 +66,9 @@ section#video-background video {
     width: 360px;
     height: 220px;
     z-index: 2;
+    position: absolute;
+    top: 130px;
+    right: 400px;
     animation: ghostMove 10s infinite;
 }
 
@@ -70,16 +77,19 @@ section#video-background video {
     height: 170px;
     z-index: 1;
     position: absolute;
-    right: 150px;
-    bottom: 160px;
-    animation: reaperMove 20s infinite;
+    right: 700px;
+    top: 600px;
+    animation: reaperMove 15s infinite;
+    overflow: hidden;
 }
 
 #click_me {
     width: 140px;
     height: auto;
-    z-index: 2;
-    margin-top: -700px;
+    z-index: 3;
+    top: -33px;
+    left: 8px;
+    position: absolute;
 }
 
 #background {
